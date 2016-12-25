@@ -1,0 +1,22 @@
+{
+  "name": "flashcard",
+  "version": "1.0.0",
+  "description": "flashcard",
+  "main": "Flash_card.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chezkevin/Flashcard-Generator.git"
+  },
+  "author": "kevin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chezkevin/Flashcard-Generator/issues"
+  },
+  "homepage": "https://github.com/chezkevin/Flashcard-Generator#readme",
+  "dependencies": {
+    "inquirer": "^2.0.0"
+  }
+}

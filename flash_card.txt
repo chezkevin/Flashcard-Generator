@@ -1,0 +1,7 @@
+{
+  "front": "bstuf",
+  "back": "bstuf"
+}{
+  "text": "cstuf",
+  "cloze": "cstuf"
+}
