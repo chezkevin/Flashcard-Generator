@@ -4,4 +4,10 @@
 }{
   "text": "cstuf",
   "cloze": "cstuf"
+}{
+  "front": "How many loaves are in a Bakers' Dozen?",
+  "back": "13"
+}{
+  "text": "Curious George",
+  "cloze": "is a movie featuring an animated monkey."
 }

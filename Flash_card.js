@@ -13,7 +13,6 @@ var BasicFlashCard = function(front,back) {
 	};
 	this.save = function(){
 		var JSONstring = JSON.stringify(this, null, 2);
-		console.log("JSON: " + JSONstring);
 		fs.appendFile("flash_card.txt", JSONstring, function(err){
 			// If an error was experienced we say it.
 			if (err) {
@@ -38,7 +37,6 @@ var ClozeFlashcard = function(text,cloze) {
 	};
 	this.save = function(){
 		var JSONstring = JSON.stringify(this, null, 2);
-		console.log("JSON: " + JSONstring);
 		fs.appendFile("flash_card.txt", JSONstring, function(err){
 			// If an error was experienced we say it.
 			if (err) {
@@ -73,10 +71,8 @@ var askQuestion = function() {
 			message: "If Basic, what is the back? If Cloze, what is the Cloze?",
 		}
 	]).then(function(answers) {
-		console.log("flashCardType: " + answers.flashCardType);
 		if (answers.flashCardType === "Basic") {
 			var flashCard = new BasicFlashCard(answers.cTextorBFront,answers.cClozeorBBack);
-			console.log("flashCard: " + flashCard);
 			flashCard.save();
 		}
 		if (answers.flashCardType === "Cloze") {
